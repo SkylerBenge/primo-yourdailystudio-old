@@ -7,7 +7,8 @@
         <link rel="stylesheet" type="text/css" href="./styles.css" />
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
       </head>
       <body data-instant-intensity="all" class="primo-page">   
@@ -95,7 +96,8 @@
       
       <div class="block" id="block-mpgzy">
         <div class="primo-component" id="component-mpgzy">
-          <div><div class="form outer grid md:grid-cols-2">
+          <div><a id="contact"></a>
+<div class="form outer grid md:grid-cols-2">
   <div class="flex flex-col justify-center">
     <h2 class="heading text-center">Hey there! Let&#x27;s connect.</h2>
     <h3 class="subheading text-center">We'd love to hear about the business challenges you're currently facing</h3>
@@ -440,18 +442,26 @@
           <div><div class="footer">
   <div class="grid grid-cols-2 md:grid-cols-3">
     <div>
-      <a class="button w-full text-white font-bold rounded-lg transition ease-in-out duration-300 href="#">Our Packages</a>
+      <a class="button w-full text-white font-bold rounded-lg transition ease-in-out duration-300">Our Packages</a>
     </div>
     <div>
     </div>    
     <div>
-      <a class="button w-full text-white font-bold rounded-lg transition ease-in-out duration-300 href="#">Contact Us</a>
+      <div class="button w-full text-white font-bold rounded-lg transition ease-in-out duration-300 contact">Contact Us</div>
     </div>    ￰
-  </div>
+  </div                                                                                                    
   <div>
     <h2 class="heading">Your Daily Studio</h2>
-  </div>￰
-</div></div>
+  </div>
+</div>
+
+<script>
+  $('.contact').click(function() {
+    console.log('test');
+    var target = $('#contact');
+    $('html, body').animate({ scrollTop: target.offset().top - (160)}, 500);
+  });  
+</script></div>
           
         </div>
         <style type="text/css">#component-ouyck .footer {
