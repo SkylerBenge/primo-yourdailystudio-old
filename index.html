@@ -240,11 +240,12 @@
 
 <script>
   var distance = $('.outer').offset().top
-
+  
   $(window).scroll(function() {
     $( '.outer li' ).each(function() {
       var distance = $(this).offset().top;
-      if ( $(window).scrollTop() >= distance - distance * 3 ) {
+      console.log(distance);
+      if ( $(window).scrollTop() >= distance - $(window).height() / 1.5 ) {
           $(this).addClass('slideIn')
       }    
     });
