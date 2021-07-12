@@ -244,7 +244,7 @@
   $(window).scroll(function() {
     $( '.outer li' ).each(function() {
       var distance = $(this).offset().top;
-      if ( $(window).scrollTop() >= distance - 200 ) {
+      if ( $(window).scrollTop() >= distance - distance * 3 ) {
           $(this).addClass('slideIn')
       }    
     });
