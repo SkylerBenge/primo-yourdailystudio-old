@@ -236,10 +236,26 @@
       <h3 class="gradient">Website Management</h3>
     </li>    
   </ul>
-</div>        </div>
+</div>        
+
+<script>
+  var distance = $('.outer').offset().top
+
+  $(window).scroll(function() {
+    $( '.outer li' ).each(function() {
+      var distance = $(this).offset().top;
+      if ( $(window).scrollTop() >= distance - 200 ) {
+          $(this).addClass('slideIn')
+      }    
+    });
+  });
+</script>￰</div>
           
         </div>
-        <style type="text/css">#component-bhrns h3 {
+        <style type="text/css">#component-bhrns .spacer {
+    height: 500px;
+  }
+  #component-bhrns h3 {
     background-image: linear-gradient(
 146deg
 , #f07084, #e98853);
@@ -249,6 +265,12 @@
     text-align: right;
     letter-spacing: -.8vw;
     padding-right: .8vw;
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+  #component-bhrns .slideIn h3 {
+    transition: transform 1s;
+    transform: translateX(0%);
   }
   #component-bhrns li:not(:first-of-type) {
     margin-top: -3vw
@@ -459,7 +481,7 @@
   $('.contact').click(function() {
     console.log('test');
     var target = $('#contact');
-    $('html, body').animate({ scrollTop: target.offset().top - (160)}, 500);
+    $('html, body').animate({ scrollTop: target.offset().top - (100)}, 500);
   });  
 </script></div>
           
