@@ -596,6 +596,10 @@ video {
   outline-offset: 2px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
