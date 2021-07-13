@@ -804,10 +804,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .outer {
-    padding: 0 5vw;
-  }
-
   .heading .subheading {
     text-align: center;
   }
