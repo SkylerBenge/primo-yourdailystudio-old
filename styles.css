@@ -784,6 +784,12 @@ video {
   font-size: 2vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2vw;
+  background-color: #5380e9;
+}
+
+.button:hover {
+  background-color: #7153e9;
 }
 
 .body {
@@ -798,8 +804,20 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .heading .subheading {
+    text-align: center;
+  }
+
   .button {
     font-size: 5vw;
+  }
+
+  .heading {
+    margin-bottom: 10vw;
+  }
+
+  .subheading {
+    margin-bottom: 8vw;
   }
 }
 
