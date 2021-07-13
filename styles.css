@@ -804,6 +804,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .outer {
+    padding: 0 5vw;
+  }
+
   .heading .subheading {
     text-align: center;
   }
@@ -818,6 +822,11 @@ h3 {
 
   .subheading {
     margin-bottom: 8vw;
+  }
+
+  .body {
+    font-size: 5vw;
+    text-align: center;
   }
 }
 
