@@ -332,9 +332,9 @@
           <div><div class="outer grid grid-flow-row grid-rows-4">
   <div class="flex flex-wrap">
     <div class="w-full md:w-2/4 feature  flex flex-col justify-center">
-      <h2 class="feature">Shopify Buildout<h2>
+      <h2 class="feature-title">Shopify Buildout<h2>
     </div>
-    <div class="w-full md:w-2/4 sub-feature flex flex-col justify-center">
+    <div class="w-full md:w-2/4 subfeature flex flex-col justify-center">
         <li>
           Custom Homepage
         </li>
@@ -357,7 +357,7 @@
   </div>
   
   <div class="flex flex-wrap">
-    <div class="md:w-2/4 order-2 md:order-1 sub-feature flex flex-col justify-center">
+    <div class="md:w-2/4 order-2 md:order-1 subfeature flex flex-col justify-center">
         <li>
           Website A/B Testing
         </li>
@@ -381,15 +381,15 @@
         </li>
     </div>
     <div class="w-full md:w-2/4 order-1 md:order-2 feature flex flex-col justify-center">
-       <h2 class="feature">Digital Growth</h2>
+       <h2 class="feature-title">Digital Growth</h2>
     </div>
   </div>
 
   <div class="flex flex-wrap">
     <div class="w-full md:w-2/4 feature flex flex-col justify-center">
-       <h2 class="feature">Brochure CMS</h2>
+       <h2 class="feature-title">Brochure CMS</h2>
     </div>
-    <div class="md:w-2/4 sub-feature flex flex-col justify-center">
+    <div class="md:w-2/4 subfeature flex flex-col justify-center">
         <li>
           Easy To Use CMS
         </li>
@@ -412,7 +412,7 @@
   </div>
   
   <div class="flex flex-wrap">
-    <div class="md:w-2/4 order-2 md:order-1 sub-feature flex flex-col justify-center">
+    <div class="md:w-2/4 order-2 md:order-1 subfeature flex flex-col justify-center">
         <li>
           Multiple Angles Per Product
         </li>
@@ -433,7 +433,7 @@
         </li>
     </div>
     <div class="w-full md:w-2/4 order-1 md:order-2 feature flex flex-col justify-center">
-       <h2 class="feature">E-Com Photos</h2>
+       <h2 class="feature-title">E-Com Photos</h2>
     </div>  
   </div>
 </div></div>
@@ -451,7 +451,7 @@
     padding-left: 1vw;
     letter-spacing: -.5vw;
   }
-  #component-ntiqf .sub-feature {
+  #component-ntiqf .subfeature {
     font-size: 3vw;
     line-height: 1.2;
     list-style: none;
@@ -467,7 +467,7 @@
       text-align: center;
     }
 
-    #component-ntiqf .sub-feature {
+    #component-ntiqf .subfeature {
       font-size: 6vw;
       height: 60vw;
       padding: 10vw;
@@ -632,7 +632,7 @@
     function fadeUp() {
       if ( $(window).scrollTop() >= distance - $(window).height() / 1.2 ) {
           block.find('.heading').addClass('is-visible');
-          block.find('.feature').addClass('is-visible');
+          block.find('.feature-title').addClass('is-visible');
           block.find('li').each(function(i){
             setTimeout(function(){
               $('.mosaic').eq(i).addClass('pop-up');
