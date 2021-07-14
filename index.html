@@ -603,9 +603,12 @@
     var block = $(this);
     $(window).scroll(function() {
       console.log(distance);
-      if ( $(window).scrollTop() >= distance - $(window).height() / 1.1 ) {
+      if ( $(window).scrollTop() >= distance - $(window).height() / 1.2 ) {
           block.find('.heading').addClass('is-visible')
-      }    
+      }
+      if ( $(window).scrollTop() >= distance - $(window).height() / 1.3 ) {
+          block.find('.subheading').addClass('is-visible')
+      }      
     });
   });
 </script>￰
