@@ -564,7 +564,7 @@
   #component-dubdw .mosaic {
     opacity: 0;
   }
-  #component-dubdw .mosaic.is-visible {
+  #component-dubdw .mosaic.pop-up {
     -webkit-animation: popUp 600ms ease-in forwards;
             animation: popUp 600ms ease-in forwards;
   }
@@ -648,7 +648,14 @@
     function fadeUp() {
       if ( $(window).scrollTop() >= distance - $(window).height() / 1.2 ) {
           block.find('.heading').addClass('is-visible');
-          block.find('.mosaic').addClass('is-visible');
+          
+          block.find('li').each(function(i){
+            setTimeout(function(){
+              $('.mosaic').eq(i).addClass('pop-up');
+            }, 200 * i);
+          });
+      }    
+    });
       }
       if ( $(window).scrollTop() >= distance - $(window).height() / 1.3 ) {
           block.find('.subheading').addClass('is-visible');
@@ -672,7 +679,7 @@
       $('.item').eq(i).addClass('pop-up');
     }, 200 * i);
   });
-</script>￰
+</script>	
       </body>
     </html>
   
