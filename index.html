@@ -598,7 +598,6 @@
       
         
         <script>
-$( document ).ready(function() {  
   $( '.block' ).each(function() {
     var distance = $(this).offset().top;    
     var block = $(this);
@@ -615,10 +614,11 @@ $( document ).ready(function() {
     $(window).scroll(function() {
       fadeUp();    
     });
+
+    $( document ).ready(function() {  
+        fadeUp();
+    });      
   });
-  
-  fadeUp();
-}
 </script>￰
       </body>
     </html>
