@@ -807,7 +807,7 @@ h3 {
   font-weight: 800;
 }
 
-.heading, .subheading {
+.heading, .subheading, .body {
   opacity: 0;
   visibility: hidden;
   will-change: opacity, visibility;
@@ -819,11 +819,16 @@ h3 {
 }
 
 .subheading {
-  transform: translateY(8vh);
+  transform: translateY(7vh);
   transition: opacity 1s ease-in, transform 1.5s ease-out;
 }
 
-.heading.is-visible, .subheading.is-visible {
+.body {
+  transform: translateY(7vh);
+  transition: opacity 1.2s ease-in, transform 1.8s ease-out;
+}
+
+.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
