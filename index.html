@@ -599,11 +599,12 @@
         
         <script>
   $( '.block' ).each(function() {
+    var distance = $(this).offset().top;    
+    var block = $(this);
     $(window).scroll(function() {
-      var distance = $(this).offset().top;
       console.log(distance);
-      if ( $(window).scrollTop() >= distance - $(window).height() / 3 ) {
-          $(this).find('.heading').addClass('is-visible')
+      if ( $(window).scrollTop() >= distance - $(window).height() / 1.1 ) {
+          block.find('.heading').addClass('is-visible')
       }    
     });
   });
